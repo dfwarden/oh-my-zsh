@@ -42,6 +42,8 @@ export PATH=/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/lo
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # Init RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
+# Init boxen's env
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # Enable OpenSSL validation of certs
 export SSL_CERT_FILE=/usr/local/opt/curl-ca-bundle/share/ca-bundle.crt
